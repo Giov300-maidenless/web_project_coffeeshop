@@ -7,11 +7,16 @@
   line-height: 20px;
 }
 .header {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   background-image: url(../images/background_header.svg);
   position: relative;
+  min-height: 720px;
+  max-height: 800px;
+  height: 100vh;
 }
-.logo_image {
+.nav__logo {
   margin: 30px 30px;
   height: 39px;
   width: 105px;
@@ -27,7 +32,7 @@
   gap: 20px;
   margin: 30px 80px;
 }
-.title {
+.header__title {
   margin-top: 183px;
   margin-left: 80px;
   max-width: 709px;
@@ -39,8 +44,11 @@
   line-height: 72px;
   color: #2f80ed;
   letter-spacing: -1px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
 }
-.title-accent {
+.header__span-accent {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -50,7 +58,7 @@
   display: block;
   color: black;
 }
-.sub-title {
+.header__description {
   display: flex;
   max-width: 683px;
   font-family: "Noto Serif";
@@ -60,8 +68,10 @@
   line-height: 30px;
   margin-left: 80px;
   margin-top: 28px;
+  position: relative;
+  z-index: 1;
 }
-.image {
+.header__image {
   position: absolute;
   right: 5px;
   top: 124px;
@@ -69,12 +79,18 @@
   width: 646px;
 }
 
-.footer-title {
-  margin-top: auto;
+.header__footer {
+  position: relative;
+  align-items: flex-end;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
   margin: 40px 80px;
+  margin-top: auto;
 }
 
-.footer-p {
+.header__paragraph {
+  margin: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -83,13 +99,59 @@
   color: #838383;
 }
 
-.location {
+.recipes__title {
+  max-width: 580px;
+  margin: 0;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #838383;
+  font-size: 44px;
+  line-height: 52px;
+  color: white;
+}
+
+.recipes__subtitle {
+  margin-top: 24px;
+  max-width: 438px;
+  margin: 0;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+.recipes {
+  background-color: #0a2750;
+  background-image: url(../images/background_recipes.svg);
+  background-size: cover;
+  padding: 100px 80px 215px;
+}
+
+.recipes__videos {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 40px;
+}
+
+.recipes__iframe {
+  height: 273px;
+  width: 480px;
+}
+
+.recipes__video-caption {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
 }
 
 .nav__link {

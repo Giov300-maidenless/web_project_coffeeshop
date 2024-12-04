@@ -154,6 +154,70 @@
   color: white;
 }
 
+.reservation {
+  background-image: url(../images/background_reservation.svg);
+  background-size: cover;
+  background-color: #d9e7ff;
+  padding: 100px 0 120px;
+}
+
+.reservation__form {
+  max-width: 385px;
+  margin: auto;
+}
+.reservation__title {
+  margin: 0 auto 80px;
+  text-align: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.form__label {
+  margin-bottom: 8px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.form__input {
+  border-radius: 4px;
+  margin-bottom: 32px;
+  height: 60px;
+}
+
+.form__button {
+  border-radius: 4px;
+  background-color: #2f80ed;
+  cursor: pointer;
+  height: 60px;
+  margin-bottom: 32px;
+  max-width: 385px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__button:hover {
+  opacity: 0.7;
+}
+.form__checkbox {
+  height: 20px;
+  width: 20px;
+  margin-right: 12px;
+}
 .nav__link {
 }
 

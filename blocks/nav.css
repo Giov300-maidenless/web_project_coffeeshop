@@ -15,4 +15,9 @@
   margin: 30px 80px;
 }
 .nav__link {
+  color: #000000;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: #2f80ed;
 }
